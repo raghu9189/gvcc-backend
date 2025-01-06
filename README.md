@@ -1,8 +1,13 @@
-# To run the application in local
-```
-npm run start
-```
-# User Data Model 
+# Set .env in local with values
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=123456789
+DB_NAME=gvcc
+DB_PORT=3306
+JWT_SECRET=654789
+SERVER_PORT=8082
+
+# create user Data Model in MySQL
 
 ```
 CREATE TABLE IF NOT EXISTS `user` (
@@ -16,6 +21,11 @@ CREATE TABLE IF NOT EXISTS `user` (
   UNIQUE (`email`)
   )
 ENGINE = InnoDB;
+```
+
+# To run the application in local
+```
+npm run start
 ```
 
 # API Endpoints
